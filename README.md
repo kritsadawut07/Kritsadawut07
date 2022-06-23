@@ -15,3 +15,7 @@ pyboy = PyBoy('ROMs/gamerom.gb')
 while not pyboy.tick():
     pass
 pyboy.stop()
+from pyboy import PyBoy
+with PyBoy('ROMs/gamerom.gb') as pyboy:
+    while not pyboy.tick():
+        pass
